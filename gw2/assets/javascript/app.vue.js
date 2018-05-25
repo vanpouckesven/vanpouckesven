@@ -81,6 +81,11 @@ var app = new Vue({
             worldBoss.durationMinutes = duration.minutes();
         }
     },
+    filters: {
+      normalizeTime: function(value) {
+        return (value < 10) ? value + '0' : value;
+      }
+    },
     mounted: function () {
         var today = new Date();
         this.todayDateString = today.getDate() + '' + (today.getMonth() + 1) + '' + today.getFullYear();
@@ -109,7 +114,11 @@ var app = new Vue({
             total: 0,
             completed: 0
         },
-        currentItem: {},
+        currentItem: {
+          'map': '',
+          'waypoint': '',
+          'image': ''
+        },
         todayDateString: '',
         localStorageString: '',
         currentWorldBoss: null,

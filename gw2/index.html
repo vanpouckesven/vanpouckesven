@@ -12,8 +12,6 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
-
     <title>GuildWars2 Dashboard</title>
 
     <script
@@ -28,39 +26,40 @@
     <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
-    <script src="./data/DefaultGeneralDailyItems.js"></script>
-    <script src="./data/DefaultOres.js"></script>
-    <script src="./data/WorldBossSpawnTimes.js"></script>
+    <link rel="stylesheet" href="assets/css/stylesheet.css?v1">
+
+    <script src="./data/DefaultGeneralDailyItems.js?v1"></script>
+    <script src="./data/DefaultOres.js?v1"></script>
+    <script src="./data/WorldBossSpawnTimes.js?v1"></script>
 
 </head>
 <body>
 
 <div class="container">
 
-    <!--<h1 class="display-4">GuildWars2 Dashboard</h1>-->
-
-    <div id="guildwars2App">
+  <div id="guildwars2App">
+    <h1 class="display-4">
+      GuildWars2 Dashboard
+      <span class="badge badge-pill badge-success">{{dailyItems.completed}} / {{dailyItems.total}}</span>
+    </h1>
 
         <div class="row" v-if="currentWorldBoss && nextWorldBoss">
             <div class="col-md-6">
                 <div class="alert alert-warning">
-                    <h4>Upcomming World Boss ({{ currentWorldBoss.durationHours }}:{{ currentWorldBoss.durationMinutes
-                        }})</h4>
+                    <h4>Upcomming World Boss ({{ currentWorldBoss.durationHours }}:{{ currentWorldBoss.durationMinutes|normalizeTime}})</h4>
 
                     <p>
-                    <h5>{{ currentWorldBoss.boss.name }} ({{ currentWorldBoss.hour }}:{{ currentWorldBoss.minutes
-                        }})</h5>
+                    <h5>{{ currentWorldBoss.boss.name }} ({{ currentWorldBoss.hour }}:{{ currentWorldBoss.minutes|normalizeTime}})</h5>
                     {{ currentWorldBoss.boss.map }}
-                    <br>{{ currentWorldBoss.boss.location }} - {{ currentWorldBoss.boss.waypoint }} - {{
-                    currentWorldBoss.boss.waypoint_code }}
+                    <br>{{ currentWorldBoss.boss.location }} - {{ currentWorldBoss.boss.waypoint }} - {{currentWorldBoss.boss.waypoint_code }}
                     </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="alert alert-info">
-                    <h4>Next World Boss ({{ nextWorldBoss.durationHours }}:{{ nextWorldBoss.durationMinutes }})</h4>
+                    <h4>Next World Boss ({{ nextWorldBoss.durationHours }}:{{ nextWorldBoss.durationMinutes|normalizeTime }})</h4>
                     <p>
-                    <h5>{{ nextWorldBoss.boss.name }} ({{ nextWorldBoss.hour }}:{{ nextWorldBoss.minutes }})</h5>
+                    <h5>{{ nextWorldBoss.boss.name }} ({{ nextWorldBoss.hour }}:{{ nextWorldBoss.minutes|normalizeTime }})</h5>
                     {{ nextWorldBoss.boss.map }}
                     <br>{{ nextWorldBoss.boss.location }} - {{ nextWorldBoss.boss.waypoint }} - {{
                     nextWorldBoss.boss.waypoint_code }}
@@ -78,8 +77,7 @@
                         <td>Map</td>
                         <td>Location</td>
                         <td>Waypoint</td>
-                        <td><span
-                                class="badge badge-pill badge-success">{{dailyItems.completed}} / {{dailyItems.total}}</span>
+                        <td>
                         </td>
                     </tr>
                     </thead>
@@ -129,15 +127,15 @@
 
         <div>
             <!-- Modal Component -->
-            <b-modal id="modal1" title="currentItem.map (currentItem.waypoint)">
-                <img src="#" />
+            <b-modal size="lg" id="modal1" :title="currentItem.map + ' (' + currentItem.waypoint + ')'">
+                <div class="text-center"><img :src="currentItem.image" /></div>
             </b-modal>
         </div>
 
     </div>
 </div>
 
-<script src="./assets/javascript/app.vue.js"></script>
+<script src="./assets/javascript/app.vue.js?v1"></script>
 
 </body>
 </html>

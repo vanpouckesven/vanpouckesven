@@ -1,5 +1,6 @@
 .badge {
   padding: 7px 12px;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -24,4 +25,8 @@ thead tr td {
 
 .card .table {
   margin-bottom: 0;
+}
+
+.modal-dialog {
+  max-width: 1024px;
 }

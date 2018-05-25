@@ -3,18 +3,69 @@ var defaultOres = [
         name: 'Silver',
         veins: [
             {
-                "map": "Brisban Wildlands",
-                "location": "Lionshead Outcrops",
-                "waypoint": "Gallowfields waypoint",
-                "waypoint_code": "[&BGMAAAA=]",
-                "completed": false
+                'map': 'Brisban Wildlands',
+                'location': 'Lionshead Outcrops',
+                'waypoint': 'Gallowfields waypoint',
+                'waypoint_code': '[&BGMAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Brisban%20Wildlands%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
             },
             {
-                "map": "Gendarran Fields",
-                "location": "Overlook Caverns",
-                "waypoint": "Icegate waypoint",
-                "waypoint_code": "[&BJMBAAA=]",
-                "completed": false
+                'map': 'Gendarran Fields',
+                'location': 'Overlook Caverns',
+                'waypoint': 'Icegate waypoint',
+                'waypoint_code': '[&BJMBAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Gendarran%20Fields%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Fields of Ruin',
+                'waypoint': 'Rosko’s Campsite Waypoint',
+                'waypoint_code': '[&BNgAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Fields%20of%20Ruin%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Diessa Plateau',
+                'waypoint': 'Blasted Moors Waypoint',
+                'waypoint_code': '[&BNoAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Diessa%20Plateau%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Snowden Drifts',
+                'waypoint': 'Valslake Waypoint',
+                'waypoint_code': '[&BMADAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Snowden%20Drifts%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Lornar\'s Pass',
+                'waypoint': 'Durmand Priory Waypoint',
+                'waypoint_code': '[&BOkAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Lornar\'s%20Pass%20-%20Perma%20Rich%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Kessex Hills',
+                'waypoint': 'Overlord\'s Waypoint',
+                'waypoint_code': '[&BAQAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Kessex%20Hills%20-%20Perma%20Rich%20Iron%20or%20Silver%203.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Kessex Hills',
+                'waypoint': 'Cereboth Waypoint',
+                'waypoint_code': '[&BBIAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Kessex%20Hills%20-%20Perma%20Rich%20Iron%20or%20Silver.jpg',
+                'completed': false
+            },
+            {
+                'map': 'Kessex Hills',
+                'waypoint': 'Cereboth Waypoint',
+                'waypoint_code': '[&BBIAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Kessex%20Hills%20-%20Perma%20Rich%20Iron%20or%20Silver%202.jpg',
+                'completed': false
             }
         ]
     },
@@ -22,68 +73,77 @@ var defaultOres = [
         name: 'Iron',
         veins: [
             {
-                "map": "Blazeridge steppes",
-                "location": "Behem Gauntlet",
-                "waypoint": "Behem waypoint",
-                "waypoint_code": "[&BP0BAAA=]",
-                "completed": false
+                'map': 'Blazeridge steppes',
+                'location': 'Behem Gauntlet',
+                'waypoint': 'Behem waypoint',
+                'waypoint_code': '[&BP0BAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Blazeridge%20Steppes%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Diessa plateau",
-                "location": "Arcovian Foothills",
-                "waypoint": "Oldgate waypoint",
-                "waypoint_code": "[&BF4BAAA=]",
-                "completed": false
+                'map': 'Diessa plateau',
+                'location': 'Arcovian Foothills',
+                'waypoint': 'Oldgate waypoint',
+                'waypoint_code': '[&BF4BAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Diessa%20Plateau%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Fields of Ruin",
-                "location": "Dragonrot Domains",
-                "waypoint": "Helliot mine waypoint",
-                "waypoint_code": "[&BEsBAAA=]",
-                "completed": false
+                'map': 'Fields of Ruin',
+                'location': 'Dragonrot Domains',
+                'waypoint': 'Helliot mine waypoint',
+                'waypoint_code': '[&BEsBAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Fields%20of%20Ruin%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Gendarran Fields",
-                "location": "Overlook Caverns",
-                "waypoint": "Icegate waypoint",
-                "waypoint_code": "[&BJMBAAA=]",
-                "completed": false
+                'map': 'Gendarran Fields',
+                'location': 'Overlook Caverns',
+                'waypoint': 'Icegate waypoint',
+                'waypoint_code': '[&BJMBAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Gendarran%20Fields%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Harathi Hinterlands",
-                "location": "Ruins of Holy Demetra",
-                "waypoint": "Demetra waypoint",
-                "waypoint_code": "[&BKsAAAA=]",
-                "completed": false
+                'map': 'Harathi Hinterlands',
+                'location': 'Ruins of Holy Demetra',
+                'waypoint': 'Demetra waypoint',
+                'waypoint_code': '[&BKsAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Harathi%20Hinterlands%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Brisban Wildlands",
-                "location": "The Gallowfields",
-                "waypoint": "Gallowfields waypoint",
-                "waypoint_code": "[&BGMAAAA=]",
-                "completed": false
+                'map': 'Brisban Wildlands',
+                'location': 'The Gallowfields',
+                'waypoint': 'Gallowfields waypoint',
+                'waypoint_code': '[&BGMAAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Brisban%20Wildlands%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
 
             {
-                "map": "Dredgehaunt Cliffs",
-                "location": "Kolkorensburg",
-                "waypoint": "Wyrmblood waypoint",
-                "waypoint_code": "[&BGUCAAA=]",
-                "completed": false
+                'map': 'Dredgehaunt Cliffs',
+                'location': 'Kolkorensburg',
+                'waypoint': 'Wyrmblood waypoint',
+                'waypoint_code': '[&BGUCAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Dredgehaunt%20Cliffs%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Lornar's pass",
-                "location": "Icedevil's Needle",
-                "waypoint": "Icedevil's waypoint",
-                "waypoint_code": "[&BFEGAAA=]",
-                "completed": false
+                'map': 'Lornar\'s pass',
+                'location': 'Icedevil\'s Needle',
+                'waypoint': 'Icedevil\'s waypoint',
+                'waypoint_code': '[&BFEGAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Lornar\'s%20Pass%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             },
             {
-                "map": "Snowden drifts",
-                "location": "Reaver's Dale",
-                "waypoint": "Snowhawk landing waypoint",
-                "waypoint_code": "[&BL8AAAA=]",
-                "completed": false
+                'map': 'Snowden drifts',
+                'location': 'Reaver\'s Dale',
+                'waypoint': 'Snowhawk landing waypoint',
+                'waypoint_code': '[&BL8AAAA=]',
+                'image': 'https://gw2efficiency.com/assets/gathering/permanent/Snowden%20Drifts%20-%20Perma%20Rich%20Iron.jpg',
+                'completed': false
             }
         ]
     },
