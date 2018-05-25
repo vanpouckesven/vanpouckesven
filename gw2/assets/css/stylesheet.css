@@ -1,0 +1,27 @@
+.badge {
+  padding: 7px 12px;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+thead tr td {
+  font-weight: bold;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card .table tr:first-child td {
+  border-top: none;
+}
+
+.card .table {
+  margin-bottom: 0;
+}
