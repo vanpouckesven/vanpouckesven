@@ -26,11 +26,11 @@
     <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
-    <link rel="stylesheet" href="assets/css/stylesheet.css?v1">
+    <link rel="stylesheet" href="assets/css/stylesheet.css?v2">
 
-    <script src="./data/DefaultGeneralDailyItems.js?v1"></script>
-    <script src="./data/DefaultOres.js?v1"></script>
-    <script src="./data/WorldBossSpawnTimes.js?v1"></script>
+    <script src="./data/DefaultGeneralDailyItems.js?v2"></script>
+    <script src="./data/DefaultOres.js?v2"></script>
+    <script src="./data/WorldBossSpawnTimes.js?v2"></script>
 
 </head>
 <body>
@@ -116,7 +116,7 @@
                             <td>{{ vein.waypoint }}</td>
                             <td class="text-center">
                                 <input type="checkbox" v-model="vein.completed"
-                                                           @click="selectOre(ore)"/>
+                                                           @click="selectDailyItem(vein)"/>
                             </td>
                             <td v-if="vein.image"><button type="button" class="btn btn-sm btn-secondary" v-b-modal.modal1 @click="showImage(vein)"><i class="far fa-image"></i></button></td>
                         </tr>
@@ -135,7 +135,7 @@
     </div>
 </div>
 
-<script src="./assets/javascript/app.vue.js?v1"></script>
+<script src="./assets/javascript/app.vue.js?v2"></script>
 
 </body>
 </html>
